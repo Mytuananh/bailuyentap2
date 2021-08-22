@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai1</title>
+</head>
+<body>
+<form>
+    <p>Độ C:</p>
+    <p> <input type="text" id="doc" placeholder="Nhập số..."></p>
+    <p><button type="button" onclick="dof()">Độ F</button> </p>
+    <p id="ket"></p>
+</form>
+<script>
+    function dof() {
+       let dof = document.getElementById("doc").value;
+       let a = parseFloat(dof)
+        let b = (a*9/5) + 32
+        document.getElementById("ket").innerText = ' Độ F:' + b
+    }
+</script>
+</body>
+</html>

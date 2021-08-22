@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <p>Cạnh a:</p>
+    <p> <input type="text" id="doc" placeholder="Nhập số..."></p>
+    <p>Cạnh b:</p>
+    <p> <input type="text" id="dob" placeholder="Nhập số..."></p>
+    <p><button type="button" onclick="dof()">Kết quả</button> </p>
+    <p id="ket"></p>
+</form>
+<script>
+    function dof() {
+        let doc = document.getElementById("doc").value;
+        let a = parseFloat(doc)
+        let dob = document.getElementById("dob").value;
+        let b = parseFloat(dob)
+        let c = a*b*0.5
+        document.getElementById("ket").innerText = ' Diện tích tam giác vuông:' + c
+    }
+</script>
+</body>
+</html>

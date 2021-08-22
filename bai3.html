@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+  <p>Cạnh a:</p>
+  <p> <input type="text" id="doc" placeholder="Nhập số..."></p>
+  <p><button type="button" onclick="dof()">Độ F</button> </p>
+  <p id="ket"></p>
+</form>
+<script>
+    function dof() {
+        let doc = document.getElementById("doc").value;
+        let a = parseFloat(doc)
+        let b = a*a
+        document.getElementById("ket").innerText = ' Diện tích hình vuông:' + b
+    }
+</script>
+
+</body>
+</html>

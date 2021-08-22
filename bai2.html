@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai2</title>
+</head>
+<body>
+<form>
+    <p>Mét:</p>
+    <p> <input type="text" id="met" placeholder="Nhập số..."></p>
+    <p><button type="button" onclick="met()">Kết quả</button> </p>
+    <p id="ket"></p>
+</form>
+<script>
+    function met() {
+        let doc = document.getElementById("met").value;
+        let a = parseFloat(doc)
+        let b = a*3.2808
+        document.getElementById("ket").innerText = ' Feet:' + b
+    }
+</script>
+</body>
+</html>
